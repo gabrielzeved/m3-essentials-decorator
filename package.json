@@ -1,0 +1,48 @@
+{
+  "name": "m3-essentials-decorator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {
+    "@gabrielzeved/m3": "bin/m3",
+    "m3": "bin/m3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsnd src/index.ts",
+    "watch": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "cli",
+    "m3"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4",
+    "@types/inquirer": "^8.2.0",
+    "@types/lodash": "^4.14.178",
+    "@types/ncp": "^2.0.5",
+    "@types/validator": "^13.7.1",
+    "nodemon": "^2.0.15",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "class-validator": "^0.13.2",
+    "clear": "^0.1.0",
+    "esm": "^3.2.25",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "lodash": "^4.17.21",
+    "ncp": "^2.0.0",
+    "string-replace-stream": "^0.0.2",
+    "typescript": "^4.5.5"
+  }
+}

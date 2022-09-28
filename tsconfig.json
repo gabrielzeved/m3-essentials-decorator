@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "es2017", "dom"],
+    "declaration": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "types": ["node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true
+  },
+  "exclude": [
+    "node_modules",
+    "src/templates",
+    "lib",
+    "test"
+  ]
+}
