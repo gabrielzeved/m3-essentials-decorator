@@ -34,6 +34,7 @@ export class CLIApplication {
       };
 
       const context = {} as CommandContext;
+      context.targetDirectory = process.cwd();
 
       this.runMiddleware(command, context, schema, 0);
     }

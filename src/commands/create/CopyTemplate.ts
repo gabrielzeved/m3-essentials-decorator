@@ -1,7 +1,7 @@
-import { Middleware } from "../../core/Middleware";
-import { TaskTitle } from "../../decorators/TaskTitle";
 import ncp from "ncp";
 import { promisify } from "util";
+import { Middleware } from "../../core/Middleware";
+import { TaskTitle } from "../../decorators/TaskTitle";
 import { CreateSchema, CUSTOM_REACT_PATH, PLACEHOLDER } from "./schema";
 //@ts-expect-error
 import replace from "string-replace-stream";
@@ -12,7 +12,6 @@ export default class CopyTemplate extends Middleware {
     let copy = promisify(ncp);
 
     const templateDirectory = context.templateDirectory;
-    context.targetDirectory = process.cwd();
 
     await copy(
       templateDirectory,
